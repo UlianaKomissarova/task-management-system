@@ -1,0 +1,7 @@
+databaseChangeLog:
+  - include:
+      file: classpath:changelog/2025-01-13_create-user-table.sql
+  - include:
+      file: classpath:changelog/2025-01-17_create-task-table.sql
+  - include:
+      file: classpath:changelog/2025-01-17_create-comment-table.sql

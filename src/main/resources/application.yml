@@ -1,0 +1,19 @@
+security:
+  jwt:
+    secret-key: dGVzdF9zZWNyZXRfa2V5XzEyMzQ1Njc4OTAxMjM0NTY3ODkwYQ==
+    expiration-time: 3600000
+
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5435/postgres_db
+    username: user
+    password: pass
+    driver-class-name: org.postgresql.Driver
+  jpa:
+    hibernate:
+      ddl-auto: none
+    show-sql: true
+
+  liquibase:
+    enabled: true
+    change-log: classpath:changelog/db.changelog-master.yaml
